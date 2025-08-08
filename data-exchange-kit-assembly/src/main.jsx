@@ -1,12 +1,12 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import Play from './routes/Play'
 import Board from './routes/Board'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: '/', element: <App /> },
   { path: '/play', element: <Play /> },
   { path: '/board', element: <Board /> }
