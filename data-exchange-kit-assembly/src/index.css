@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1f6feb;
+  --accent: #ffd200;
+}
+
+html, body, #root { height: 100%; }
+
+.bg-grid {
+  background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: center center;
+}
